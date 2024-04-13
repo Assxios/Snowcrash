@@ -52,7 +52,7 @@ sub n {
 n(t(param("x"), param("y")));
 ```
 
-Alright seems like there is will be a server on port 4646, also the program will accept two parameters: `x` and `y`. If we read a bit more we notice that a bash command is executed and that our first parameter `x` is executed in that bash command, however the `x` parameter is modified to uppercase and then stripped of its whitespace. So it won't be that easy to exploit it:
+Alright seems like there will be a server on port 4646, also the program will accept two parameters: `x` and `y`. If we read a bit more we notice that a bash command is executed and that our first parameter `x` is executed in that bash command, however the `x` parameter is modified to uppercase and then stripped of its whitespace. So it won't be that easy to exploit it:
 ```
 level12@SnowCrash:~$ curl localhost:4646/?x='`getflag > /tmp/flag`'
 .level12@SnowCrash:~$cat /tmp/flag'
