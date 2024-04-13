@@ -57,7 +57,7 @@ while 1 do
 end
 ```
 
-Alright seems like there is will be a server on port 5151, furthermore it will ask for a password when we try to connect, let's run it first:
+Alright seems like there will be a server on port 5151, furthermore it will ask for a password when we try to connect, let's run it first:
 ```
 level11@SnowCrash:~$ ./level11.lua
 lua: ./level11.lua:3: address already in use
